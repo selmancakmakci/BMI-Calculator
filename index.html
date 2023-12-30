@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMI-VKE hesaplayici</title>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Monoton&family=Permanent+Marker&display=swap" rel="stylesheet">
+</head>
+<body>
+ <div class="container-aside">
+    <aside  class="container-img"> <img src="./img/aside.png" alt="" width="350em"></aside>
+    
+    <div class="container">
+    <!--<p>Burada vucut kitle endeksinizi kilo ve boyunuzu girerek hesaplayabilirsiniz.</p>-->
+    <input id="inputBoy" type="number" placeholder="Lutfen Boyunuzu Metre Cinsinden Girin"><br>
+    <input id="inputKilo" type="number" placeholder="Lutfen Kilonuzu Kilogram Cinsinde Girin">
+    <button onclick="vkiHesapla()" id="Hesapla">Hesapla</button>
+    <div class="banner-img"> 
+        <img  src="./img/Body_Mass_Index_002S.png" alt="" width="650em">
+    </div>
+    
+        
+    
+    <div id="resultDisplay"> 
+        <div class="vki">
+        <p  id="vkiDegeri" ></p>
+        <p id="docAdvice" ></p>
+    </div>
+        <div id="imageContainer" class="image-container">
+            <img class="overlay-image hidden" id="img1" src="./img/zayif.png" alt="" width="220em">
+            <img class="overlay-image hidden" id="img2" src="./img/normal.png" alt="" width="220em">
+            <img class="overlay-image hidden" id="img3" src="./img/overveight.png" alt="" width="220em">
+            <img class="overlay-image hidden" id="img4" src="./img/obese.png" alt="" width="220em">
+            <img class="overlay-image hidden" id="img5" src="./img/extraobese.png" alt="" width="220em">
+        </div>
+    </div>
+    
+</div>
+
+
+<script src="./script.js"></script>
+</body>
+</html>
